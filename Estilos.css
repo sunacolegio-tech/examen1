@@ -1,0 +1,424 @@
+/* ESTILOS.CSS
+   PÁGINA: DESARROLLO WEB */
+/* 1. CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+/* 2. PÁGINA PRINCIPAL */
+.pagina {
+    width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 15px 18px 25px 18px;
+    background-image: url("imagenes 3/fondo.jpg");
+    background-repeat: repeat;
+    background-size: 180px 180px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+/* 3. ENCABEZADO - FLEXBOX */
+.encabezado {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 4. LOGO */
+.logo {
+    width: 85px !important;
+    height: 85px !important;
+    max-width: 85px !important;
+    max-height: 85px !important;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.20);
+}
+/* 5. TÍTULO PRINCIPAL */
+.encabezado h1 {
+    margin: 0;
+    padding: 0;
+    color: #079fe3;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+/* 6. LÍNEA */
+hr {
+    width: 100%;
+    margin: 5px 0 12px 0;
+    border: none;
+    border-top: 2px solid #555555;
+}
+/* 7. AUTOR */
+.autor {
+    width: fit-content;
+    margin: 0 0 15px auto;
+    padding: 4px 7px;
+    background-color: white;
+    border: 1px solid #bbbbbb;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444444;
+}
+/* 8. TÍTULOS DE LAS SECCIONES */
+h2 {
+    margin: 12px 0 8px 0;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #333333;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* 9. INTRODUCCIÓN */
+.introduccion {
+    width: 100%;
+}
+.introduccion p {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #333333;
+    text-align: left;
+}
+/* 10. CUADRO FLEXBOX DE DEFINICIONES */
+.contenedor-tarjetas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    padding: 8px;
+    border: 2px solid #555555;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+/* 11. TARJETAS DE HTML, CSS Y JAVASCRIPT */
+.tarjeta {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: 350px;
+    padding: 7px;
+    border: 2px solid #999999;
+    overflow: hidden;
+}
+/* 12. COLORES DE LAS TARJETAS */
+.tarjeta-html {
+    background-color: #f6dede;
+}
+.tarjeta-css {
+    background-color: #dfebf2;
+}
+.tarjeta-js {
+    background-color: #e7eedb;
+}
+/* 13. TÍTULOS HTML, CSS Y JAVASCRIPT */
+.tarjeta h3 {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 0 8px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+/* HTML */
+.tarjeta-html h3 {
+    background-color: #e84b28;
+}
+/* CSS */
+.tarjeta-css h3 {
+    background-color: #147abb;
+}
+/* JAVASCRIPT */
+.tarjeta-js h3 {
+    background-color: #60af0a;
+}
+/* 14. TEXTO DE LAS TARJETAS */
+.tarjeta p {
+    margin: 5px 0;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #444444;
+    text-align: left;
+}
+/* 15. PALABRAS RESALTADAS */
+.tarjeta strong {
+    background-color: yellow;
+    color: #333333;
+}
+/* 16. IMÁGENES CUADRADAS HTML, CSS Y JAVASCRIPT */
+.tarjeta img {
+    display: block !important;
+    width: 90px !important;
+    height: 90px !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+    min-width: 90px !important;
+    min-height: 90px !important;
+    object-fit: contain !important;
+    margin: 10px auto !important;
+    background-color: white;
+    border: none;
+}
+/* 17. SECCIÓN "ANALOGÍA DE LA WEB Y UNA CASA" */
+.analogia-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: underline;
+    margin: 15px 0 8px 0;
+}
+/* 18. CUADRO EXTERIOR DE LA ANALOGÍA */
+.caja-analogia {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+    border: 3px solid #555555;
+    background: rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
+}
+/* 19. TARJETAS DE LA ANALOGÍA */
+.caja-analogia > .html-analogia,
+.caja-analogia > .css-analogia,
+.caja-analogia > .js-analogia {
+    flex: 1;
+    min-width: 0;
+    height: 300px;
+    padding: 6px;
+    border: 2px solid #999999;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+/* 20. TÍTULOS DE LAS TARJETAS DE LA ANALOGÍA */
+.titulo-html-analogia,
+.titulo-css-analogia,
+.titulo-js-analogia {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+.titulo-html-analogia h3,
+.titulo-css-analogia h3,
+.titulo-js-analogia h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+.analogia h3 {
+     width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #e94b28;
+    color: white;
+}
+/* 21. COLORES DE LOS TÍTULOS DE LA ANALOGÍA */
+.html-analogia {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.css-analogia {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.js-analogia {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+/* HTML - NARANJA */
+.titulo-html-analogia {
+    background-color: #e84b28;
+    color: white;
+}
+/* CSS - AZUL */
+.titulo-css-analogia {
+    background-color: #147abb;
+    color: white;
+}
+/* JAVASCRIPT - VERDE */
+.titulo-js-analogia {
+    background-color: yellow;
+    color: white;
+
+}
+/* TEXTO DE LOS TÍTULOS */
+.titulo-html-analogia h3,
+.titulo-css-analogia h3,
+.titulo-js-analogia h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+/* 22. ICONOS PEQUEÑOS DE LA ANALOGÍA */
+.titulo-html-analogia img,
+.titulo-css-analogia img,
+.titulo-js-analogia img {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* 23. TEXTO DE LA ANALOGÍA */
+.caja-analogia > .html-analogia p,
+.caja-analogia > .css-analogia p,
+.caja-analogia > .js-analogia p {
+    margin: 6px 0;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #555555;
+    text-align: left;
+}
+/* 24. PRIMER TEXTO DE CADA TARJETA */
+.subtitulo-analogia {
+    font-style: italic;
+    margin-bottom: 9px;
+}
+/* 25. IMAGEN INFERIOR DE LAS CASAS */
+.imagen-inferior {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 15px 0;
+}
+.imagen-inferior img {
+    display: block !important;
+    width: 320px !important;
+    height: auto !important;
+    max-width: 320px !important;
+    object-fit: contain;
+    background-color: white;
+    border: 1px solid #999999;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.35);
+}
+/* 26. RESUMEN */
+.resumen {
+    width: 100%;
+}
+.resumen h2 {
+    margin: 5px 0 8px 0;
+    font-size: 15px;
+}
+.resumen p {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    font-style: italic;
+    color: #555555;
+}
+/* 27. ADAPTACIÓN PARA CELULARES */
+@media screen and (max-width: 950px) {
+    .pagina {
+        width: 100%;
+        padding: 12px;
+    }
+    .encabezado h1 {
+        font-size: 24px;
+    }
+    .contenedor-tarjetas,
+    .analogia-contenedor {
+        gap: 6px;
+    }
+    .tarjeta,
+    .analogia {
+        padding: 5px;
+    }
+}
+/* 28. CELULARES PEQUEÑOS */
+@media screen and (max-width: 600px) {
+    .pagina {
+        width: 100%;
+        padding: 10px;
+    }
+    .encabezado {
+        height: 85px;
+    }
+    .logo {
+        width: 70px !important;
+        height: 70px !important;
+        max-width: 70px !important;
+        max-height: 70px !important;
+    }
+    .encabezado h1 {
+        font-size: 20px;
+    }
+    .contenedor-tarjetas,
+    .analogia-contenedor {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .tarjeta,
+    .analogia {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+    }
+    .tarjeta p,
+    .analogia p {
+        font-size: 9px;
+    }
+    .tarjeta h3,
+    .analogia h3 {
+        font-size: 10px;
+    }
+    .tarjeta img {
+        width: 80px !important;
+        height: 80px !important;
+        max-width: 80px !important;
+        max-height: 80px !important;
+        min-width: 80px !important;
+        min-height: 80px !important;
+    }
+    .imagen-inferior img {
+        width: 90%;
+        max-width: 245px;
+    }
+}
